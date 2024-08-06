@@ -11,7 +11,7 @@ class Anyquery < Formula
   on_macos do
     on_intel do
       url "https://github.com/julien040/anyquery/releases/download/0.1.0/anyquery_Darwin_x86_64.tar.gz"
-      sha256 "a7a175c634c0e20292b53cd98f258b8bd5ea055d0a03ce8624abf87282ede407"
+      sha256 "16272a28dff03d995744e4fd89310574bfb0815630a7006ec9a2905fd1dfa8d6"
 
       def install
         bin.install "anyquery"
@@ -19,7 +19,7 @@ class Anyquery < Formula
     end
     on_arm do
       url "https://github.com/julien040/anyquery/releases/download/0.1.0/anyquery_Darwin_arm64.tar.gz"
-      sha256 "98598e7078319deca548ae2e6725d2bf11716ce2ad712b516e3d1f997405a10e"
+      sha256 "859460c14c237f05059e355f500006ad1c78ef389c5f7d4868eaa9af56e0c407"
 
       def install
         bin.install "anyquery"
@@ -31,7 +31,7 @@ class Anyquery < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/julien040/anyquery/releases/download/0.1.0/anyquery_Linux_x86_64.tar.gz"
-        sha256 "9d57220368d74e526f3a4876230355ec345b8d972d4c0e52be08ec4c1b41a01d"
+        sha256 "9cd27c0a16a4a511c981ec019e47461ce7649deac4d282b224f3ab011048cbf9"
 
         def install
           bin.install "anyquery"
@@ -41,7 +41,7 @@ class Anyquery < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/julien040/anyquery/releases/download/0.1.0/anyquery_Linux_arm64.tar.gz"
-        sha256 "e04f6eb796950552f57c49f5b74fddb66b29a84913f43de72cf808c532d0f836"
+        sha256 "47625b1ce45d5a7cac0837ece734e7ba45b6677eedc3372e01b18fe9597defd8"
 
         def install
           bin.install "anyquery"
