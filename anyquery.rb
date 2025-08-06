@@ -5,21 +5,21 @@
 class Anyquery < Formula
   desc "Anyquery is a query engine that allows you to query anything over SQL."
   homepage "https://anyquery.dev"
-  version "0.4.2"
+  version "0.4.3"
   license "AGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/julien040/anyquery/releases/download/0.4.2/anyquery_Darwin_x86_64.tar.gz"
-      sha256 "a5711c467e783ca0984da30a12d891201141e65a8830f4e507be75c21542587b"
+      url "https://github.com/julien040/anyquery/releases/download/0.4.3/anyquery_Darwin_x86_64.tar.gz"
+      sha256 "9648560550f1a69d71c3825d08400ce38165af5f1ed3517e360ee5ac2d14ec56"
 
       def install
         bin.install "anyquery"
       end
     end
     on_arm do
-      url "https://github.com/julien040/anyquery/releases/download/0.4.2/anyquery_Darwin_arm64.tar.gz"
-      sha256 "b3f3f9ea552c02ee6bebcf5e3e9ff221228756dbf399915b2ee0c97cecde19b6"
+      url "https://github.com/julien040/anyquery/releases/download/0.4.3/anyquery_Darwin_arm64.tar.gz"
+      sha256 "d347576f4a207d56b65dce2ca1f77928091efe7cc528c5935d26fc31d92e2ac0"
 
       def install
         bin.install "anyquery"
@@ -30,8 +30,8 @@ class Anyquery < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/julien040/anyquery/releases/download/0.4.2/anyquery_Linux_x86_64.tar.gz"
-        sha256 "868fed3b9761f9e0fde753bc7cfd007c79d7555ce1de3cd5bed90f984ae51aad"
+        url "https://github.com/julien040/anyquery/releases/download/0.4.3/anyquery_Linux_x86_64.tar.gz"
+        sha256 "d13c24a40f072761aa522e948abc3e78491ee818ce85d7115e987bc151dfbc74"
 
         def install
           bin.install "anyquery"
@@ -40,8 +40,8 @@ class Anyquery < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/julien040/anyquery/releases/download/0.4.2/anyquery_Linux_arm64.tar.gz"
-        sha256 "cf737175aebe41fc3188bc9c370bd17a7765525cbf74ed2b07f258a50fdd6795"
+        url "https://github.com/julien040/anyquery/releases/download/0.4.3/anyquery_Linux_arm64.tar.gz"
+        sha256 "e31f5f2acfb879524daba472dd56acffe936a3e0871c3c97abf6bc5fa557a259"
 
         def install
           bin.install "anyquery"
