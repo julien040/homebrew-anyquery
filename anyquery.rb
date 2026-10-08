@@ -5,21 +5,21 @@
 class Anyquery < Formula
   desc "Anyquery is a query engine that allows you to query anything over SQL."
   homepage "https://anyquery.dev"
-  version "0.5.0"
+  version "0.5.1"
   license "AGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/julien040/anyquery/releases/download/0.5.0/anyquery_Darwin_x86_64.tar.gz"
-      sha256 "c5f9230a51333592224ef2c55ec00d390f2a5b5c60dd0eac12f65b1771533092"
+      url "https://github.com/julien040/anyquery/releases/download/0.5.1/anyquery_Darwin_x86_64.tar.gz"
+      sha256 "f69820364dfbcb9220e4763d7b7703b8413e75b7224d2cabf144b2f6768eec0a"
 
       define_method(:install) do
         bin.install "anyquery"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/julien040/anyquery/releases/download/0.5.0/anyquery_Darwin_arm64.tar.gz"
-      sha256 "03ce7c0622603f9b3261b07f77a3260b205d81f37f6e7edf65b81f092fc8fbd4"
+      url "https://github.com/julien040/anyquery/releases/download/0.5.1/anyquery_Darwin_arm64.tar.gz"
+      sha256 "b2a3f03499133ba21d15c794fad7cfbfa79f88726ea3dc490a0a139f4df8dc01"
 
       define_method(:install) do
         bin.install "anyquery"
@@ -29,15 +29,15 @@ class Anyquery < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/julien040/anyquery/releases/download/0.5.0/anyquery_Linux_x86_64.tar.gz"
-      sha256 "f11608dadb2a6e88ad9742ebd783c54113c5d70e22429dd511cb092e7cca5ef8"
+      url "https://github.com/julien040/anyquery/releases/download/0.5.1/anyquery_Linux_x86_64.tar.gz"
+      sha256 "24ec3b8ffb848b1c3428bdf0a8bbf282c9602d44d52fa8ab46d44fdb9ec908dc"
       define_method(:install) do
         bin.install "anyquery"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/julien040/anyquery/releases/download/0.5.0/anyquery_Linux_arm64.tar.gz"
-      sha256 "1dd5aedda09a41cb08f14aa3b20a6f67b7d79980d1bd659670dbb7c91cb39b22"
+      url "https://github.com/julien040/anyquery/releases/download/0.5.1/anyquery_Linux_arm64.tar.gz"
+      sha256 "0e011b3c82ba515dd9142643128df5020ec088e4a9cb48719bb439d9a55bb172"
       define_method(:install) do
         bin.install "anyquery"
       end
